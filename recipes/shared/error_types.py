@@ -1,0 +1,24 @@
+VALIDATION_EXCEPTION = {
+    "type": "VALIDATION_EXCEPTION",
+    "code": 422
+}
+
+AUTHENTICATION_EXCEPTION = {
+    "type": "AUTHENTICATION_EXCEPTION",
+    "code": 401
+}
+
+AUTHORIZATION_EXCEPTION = {
+    "type": "AUTHORIZATION_EXCEPTION",
+    "code": 403
+}
+
+CONFLICT_EXCEPTION = {
+    "type": "CONFLICT_EXCEPTION",
+    "code": 409
+}
+
+NOT_FOUND_EXCEPTION = {
+    "type": "NOT_FOUND_EXCEPTION",
+    "code": 404
+}
