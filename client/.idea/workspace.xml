@@ -2,9 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="630beb48-9918-4069-b60b-cd7adb46283b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/client.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/Badge.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/Category.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/RecipeEmptyState/add-recipe.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/RecipeEmptyState/index.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/forms/AutoComplete.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/forms/FileUpload.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/forms/TextArea.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth/bookmarks.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth/profile.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth/recipes.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/auth/settings.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/create-recipe.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/recipes.svelte" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/BookmarkButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/forms/BookmarkButton.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Checkbox.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/forms/Checkbox.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/DropDown.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/forms/DropDown.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/DropDownMenu.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/DropDownMenu/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/DropDownMenuItem.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/DropDownMenu/MenuItem.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/InputField.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/forms/InputField.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/MobileDrawer.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/MobileDrawer.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/RecipeCard.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/RecipeCard.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/RecipeList.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/RecipeList.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/SignOutButton.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/forms/SignOutButton.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/CategoriesNavMenu.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/Header.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/MobileNavItem.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/MobileNavItem.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/NavItem.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/NavItem.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/appetizer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/appetizer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/beverage.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/beverage.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/dessert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/dessert.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/main-dish.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/main-dish.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/side-dish.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/side-dish.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/icons/snack.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/CategoryMenu/icons/snack.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/spicety-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/spicety-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/header/svelte-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Header/svelte-logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/_layout.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_layout.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/auth/create-recipe.svelte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/recipe/[name].svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/recipe/[name].svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/signup.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/signup.svelte" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../migrations/versions/07cc6ebe3e04_init_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/../migrations/versions/7ebf5d659897_init_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../migrations/versions/a79001f89a5b_add_follow_relationship_and_bookmark_.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipes/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipes/models/category.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipes/models/rating.py" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/models/rating.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipes/models/recipe.py" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/models/recipe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../recipes/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/../recipes/schemas.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +72,19 @@
         <option value="MobileDrawer" />
         <option value="SignOutButton" />
         <option value="JavaScript File" />
-        <option value="recipes" />
-        <option value="index" />
         <option value="Rating" />
         <option value="BookmarkButton" />
         <option value="CategoriesNavMenu" />
+        <option value="Category" />
+        <option value="index" />
+        <option value="profile" />
+        <option value="bookmarks" />
+        <option value="settings" />
+        <option value="recipes" />
+        <option value="FileUpload" />
+        <option value="TagsField" />
+        <option value="Badge" />
+        <option value="AutoComplete" />
       </list>
     </option>
   </component>
@@ -59,7 +114,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/src/lib/header/NavItem.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/PageTransition.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/header/Header.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/InputField.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/Checkbox.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/DropDownMenu.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/MobileDrawer.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/header/MobileNavItem.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/SignOutButton.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/RecipeCard.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/Rating.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/BookmarkButton.svelte&#10;/Volumes/DATA/Projects/Springboard/capstones/capstone1/recipes-app/client/src/lib/header/CategoriesNavMenu.svelte" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/header" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/lib/forms" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -69,14 +124,16 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/lib/forms" />
       <recent name="$PROJECT_DIR$/src/lib/header" />
       <recent name="$PROJECT_DIR$/src/lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/pages/recipe" />
-      <recent name="$PROJECT_DIR$/src/stores" />
       <recent name="$PROJECT_DIR$/src/pages" />
-      <recent name="$PROJECT_DIR$/src/pages/auth" />
+      <recent name="$PROJECT_DIR$/src/lib/forms" />
+      <recent name="$PROJECT_DIR$/src/lib/DropDownMenu" />
+      <recent name="$PROJECT_DIR$/src/lib/header/categoryMenu" />
+      <recent name="$PROJECT_DIR$/src/lib/header/index" />
     </key>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -113,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1636629698822</updated>
-      <workItem from="1636629702549" duration="61888000" />
+      <workItem from="1636629702549" duration="84983000" />
     </task>
     <servers />
   </component>

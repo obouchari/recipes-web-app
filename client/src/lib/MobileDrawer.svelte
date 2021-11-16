@@ -1,7 +1,7 @@
 <script>
     import Transition from 'svelte-class-transition';
 
-    import logo from "./header/spicety-logo.svg"
+    import logo from "./Header/spicety-logo.svg"
 
     export let isOpen = false;
 

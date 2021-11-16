@@ -2,8 +2,8 @@
     import { Sveltik, Form } from "sveltik"
     import {goto, url} from "@roxi/routify"
 
-    import InputField from "$lib/InputField.svelte"
-    import Checkbox from "$lib/Checkbox.svelte"
+    import InputField from "$lib/forms/InputField.svelte"
+    import Checkbox from "$lib/forms/Checkbox.svelte"
     import { authenticate } from "$services/auth"
     import { user } from "$stores/user"
 

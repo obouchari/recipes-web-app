@@ -18,6 +18,7 @@ class Recipe(db.Model):
     id = db.Column(UUID(as_uuid=True), primary_key=True, default=uuid.uuid4)
     name = db.Column(db.String(100), nullable=False)
     description = db.Column(db.String(255))
+    category = db.Column(db.String, nullable=False, default="main-dish")
     instructions = db.Column(db.Text, nullable=False)
     notes = db.Column(db.Text)
     difficulty = db.Column(db.Enum("Easy", "Medium", "Hard", name="difficulty"), nullable=False)
@@ -29,10 +30,6 @@ class Recipe(db.Model):
     # Recipe owner relationship
     creator_id = db.Column(UUID(as_uuid=True), db.ForeignKey("users.id"), nullable=False)
     creator = db.relationship("User", uselist=False, back_populates="recipes")
-
-    # Recipe category relationship
-    category_id = db.Column(UUID(as_uuid=True), db.ForeignKey("categories.id"), nullable=False)
-    category = db.relationship("Category", back_populates="recipes")
 
     # Recipe tags relationship
     tags = db.relationship("Tag",

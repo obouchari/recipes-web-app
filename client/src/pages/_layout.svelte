@@ -3,7 +3,7 @@
     import {goto, isActive} from "@roxi/routify"
 
     import { user } from "$stores/user"
-    import Header from '$lib/header/Header.svelte'
+    import Header from '$lib/Header/index.svelte'
     import "../global.css"
 
     let year = new Date().getFullYear()

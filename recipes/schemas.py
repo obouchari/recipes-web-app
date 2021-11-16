@@ -1,7 +1,7 @@
 from marshmallow import fields, pre_load, ValidationError
 
 from recipes.extensions import ma, db
-from recipes.models import Recipe, Category, Ingredient, Measurement, Tag, User
+from recipes.models import Recipe, Ingredient, Measurement, Tag, User
 from recipes.shared.error_types import NOT_FOUND_EXCEPTION
 
 
@@ -12,19 +12,9 @@ class RecipeSchema(ma.SQLAlchemyAutoSchema):
         sqla_session = db.session
 
     creator = ma.Nested("UserSchema", only=("id", "first_name", "last_name", "profile_photo"))
-    category = ma.Nested("CategorySchema", only=("id", "name"))
     tags = ma.Nested("TagSchema", many=True, exclude=("recipes",))
     measurements = ma.Nested("MeasurementSchema", many=True)
     rating = fields.Float()
-
-
-class CategorySchema(ma.SQLAlchemyAutoSchema):
-    class Meta:
-        model = Category
-        load_instance = True
-        sqla_session = db.session
-
-    recipes = ma.Nested("RecipeSchema", many=True, exclude=("category",))
 
 
 class IngredientSchema(ma.SQLAlchemyAutoSchema):

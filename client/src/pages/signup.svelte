@@ -2,7 +2,7 @@
     import { Sveltik, Form } from "sveltik";
     import {goto, url} from "@roxi/routify";
 
-    import InputField from "$lib/InputField.svelte";
+    import InputField from "$lib/forms/InputField.svelte";
     import {authenticate, register} from "$services/auth"
     import {user} from "$stores/user";
 

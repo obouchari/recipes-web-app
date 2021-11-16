@@ -2,14 +2,14 @@
     import { url } from "@roxi/routify";
 
     import logo from "./spicety-logo.svg"
-    import DropDownMenu from "$lib/DropDownMenu.svelte"
-    import DropDownMenuItem from "$lib/DropDownMenuItem.svelte"
-    import NavItem from "$lib/header/NavItem.svelte"
+    import DropDownMenu from "$lib/DropDownMenu/index.svelte"
+    import DropDownMenuItem from "$lib/DropDownMenu/MenuItem.svelte"
+    import NavItem from "$lib/Header/NavItem.svelte"
     import { user } from "$stores/user"
     import MobileDrawer from "$lib/MobileDrawer.svelte";
-    import SignOutButton from "$lib/SignOutButton.svelte";
-    import MobileNavItem from "$lib/header/MobileNavItem.svelte";
-    import CategoriesNavMenu from "$lib/header/CategoriesNavMenu.svelte";
+    import SignOutButton from "$lib/forms/SignOutButton.svelte";
+    import MobileNavItem from "$lib/Header/MobileNavItem.svelte";
+    import CategoryMenu from "$lib/Header/CategoryMenu/index.svelte";
 
     let isLoggedIn
     let email
@@ -26,9 +26,10 @@
     ]
 
     let profileNavLinks = [
-        ["/profile", "Your Profile"],
-        ["/bookmarks", "Your Bookmarks"],
-        ["/settings", "Account Settings"],
+        ["/auth/profile", "Your Profile"],
+        ["/auth/recipes", "Your Recipes"],
+        ["/auth/bookmarks", "Your Bookmarks"],
+        ["/auth/settings", "Account Settings"],
     ]
 
     let drawerVisible = false
@@ -52,9 +53,10 @@
                             {#each mainNavLinks as [path, name]}
                                 <NavItem {name} {path} />
                             {/each}
-                            <CategoriesNavMenu/>
-
+                            <CategoryMenu/>
+                            {#if isLoggedIn}
                             <NavItem name="Create Recipe" path="/auth/create-recipe" />
+                            {/if}
                         </div>
                     </div>
                 </div>

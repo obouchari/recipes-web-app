@@ -1,5 +1,8 @@
 <script>
+	import RecipeEmptyState from "$lib/RecipeEmptyState/index.svelte";
+
 	export let title = ""
+	export let isEmpty
 </script>
 
 
@@ -7,11 +10,11 @@
 
 	<div class="max-w-2xl mx-auto py-16 px-4 sm:py-6 sm:px-6 lg:max-w-7xl lg:px-4">
 
-		<!-- This example requires Tailwind CSS v2.0+ -->
 		<div class="pb-5 mb-8 border-b border-gray-200 sm:flex sm:items-center sm:justify-between">
 			<h3 class="text-2xl font-extrabold tracking-tight sm:text-3xl leading-6 text-gray-900">
 				{title}
 			</h3>
+			{#if isEmpty}
 			<div class="mt-3 sm:mt-0 sm:ml-4">
 				<span class="relative z-0 inline-flex shadow-sm rounded-md">
 					<button type="button" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-gray-50 text-sm font-medium text-gray-500 hover:bg-gray-100 focus:z-10 focus:outline-none focus:ring-1 focus:ring-yellow-400 focus:border-yellow-400">
@@ -27,11 +30,12 @@
 						</svg>
 					</button>
 				</span>
-
 			</div>
+			{/if}
 		</div>
 
 		<div class="grid grid-cols-1 gap-y-4 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 lg:grid-cols-4 lg:gap-x-8">
 			<slot/>
 		</div>
+		<RecipeEmptyState/>
 	</div>

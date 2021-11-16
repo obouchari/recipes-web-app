@@ -4,8 +4,6 @@
     export let label
     export let name
     export let type = "text"
-    export let placeholder = ""
-    export let autocomplete
 
     let errorClasses = "pr-10 border-red-300 text-red-900 placeholder-red-300"
 </script>
@@ -15,13 +13,13 @@
     <label for={name} class="block text-sm font-medium text-gray-700">{label}</label>
     <div class="mt-1 relative rounded-md shadow-sm">
         <input id={name}
-               {placeholder}
                {type}
-               {autocomplete}
                {...field}
                on:input={field.handleInput}
                on:blur={field.handleBlur}
-               class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-red-500 focus:border-red-500 sm:text-sm {(meta.touched && meta.error) && errorClasses}">
+               on:keydown
+               {...$$restProps}
+               class="appearance-none block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-yellow-400 focus:border-yellow-400 sm:text-sm {(meta.touched && meta.error) && errorClasses}">
         {#if meta.touched && meta.error}
             <div class="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
                 <svg class="h-5 w-5 text-red-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">

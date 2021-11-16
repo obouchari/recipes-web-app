@@ -1,7 +1,7 @@
 <script>
 	import {url} from "@roxi/routify";
 	import {truncate} from "$utils/str_utils";
-	import BookmarkButton from "$lib/BookmarkButton.svelte";
+	import BookmarkButton from "$lib/forms/BookmarkButton.svelte";
 
 	export let name = "Spicy Octopus Stir-Fry with"
 	export let owner = "Omar David"
@@ -13,7 +13,7 @@
 
 <div class="group relative bg-white rounded-lg flex flex-col overflow-hidden shadow-md">
 	<!-- Bookmark recipe -->
-	<div class="absolute right-2 top-2 z-20">
+	<div class="absolute right-2 top-2 z-10">
 		<BookmarkButton small />
 	</div>
 	<div class="aspect-w-3 aspect-h-2 bg-gray-200 group-hover:opacity-75 sm:aspect-none sm:h-44">

@@ -1,7 +1,7 @@
 <script>
     import { params } from "@roxi/routify"
     import Rating from "$lib/Rating.svelte";
-    import BookmarkButton from "$lib/BookmarkButton.svelte";
+    import BookmarkButton from "$lib/forms/BookmarkButton.svelte";
 
     console.log($params)
 </script>
